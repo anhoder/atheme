@@ -1,0 +1,54 @@
+  <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+              Copyright &copy; 2019
+              <span id="tran-author" class="tran-author">Author: </span><a target="_blank" href="{% if ext_author_url.length %}{{ ext_author_url }}{% /if %}">{% if ext_author.length %}{{ ext_author }}{% /if %}</a>,&nbsp; 
+              <span class="tran-theme">Theme: </span><a target="_blank" href="https://github.com/AlanAlbert/AulmaCSS">AulmaCSS</a> (Based on BulmaCSS).
+          </p>
+        </div>
+      </footer>
+
+<!-- include(section-chart-support.html) -->
+
+{% if ext_disqus_shortname.length %}
+<script type="text/javascript">
+    var disqus_shortname = '{{ ext_disqus_shortname }}'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<script type="text/javascript">
+var disqus_shortname = '{{ ext_disqus_shortname }}'; 
+
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+{% /if %}  
+{% if ext_duoshuo_shortname.length %}
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:'{{ ext_duoshuo_shortname }}'};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+{% /if %}    
+
+
+{{ siteOther }}
+
+  </body>
+</html>

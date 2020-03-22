@@ -1,0 +1,106 @@
+[
+   {
+      "title":"author-作者",
+      "variableName":"author",
+      "inputFieldHeight":22,
+      "exampleText":"艾某某"
+   },
+   {
+      "title":"author url-作者首页",
+      "variableName":"author_url",
+      "inputFieldHeight":22,
+      "exampleText":"https://xxx.cn"
+   },
+   {
+      "title":"notice-公告",
+      "variableName":"notice",
+      "inputFieldHeight":80,
+      "exampleText":"notice content 公告内容"
+   },
+   {
+      "title":"site icon-站点icon",
+      "variableName":"site_icon",
+      "inputFieldHeight":22,
+      "exampleText":"64x64 png file"
+   },
+   {
+      "title":"logo path-logo路径",
+      "variableName":"logo_path",
+      "inputFieldHeight":22,
+      "exampleText":"240x240"
+   },
+   {
+      "title":"utteranc repo",
+      "variableName":"utteranc_repo",
+      "inputFieldHeight":22,
+      "exampleText":"存放评论的github库: xx/xxx"
+   },
+   {
+      "title":"utteranc theme",
+      "variableName":"utteranc_theme",
+      "inputFieldHeight":22,
+      "exampleText":"utteranc官网可查看主题类型"
+   },
+   {
+      "title":"weibo-微博",
+      "variableName":"weibo_url",
+      "inputFieldHeight":22,
+      "exampleText":"your weibo url"
+   },
+   {
+      "title":"twitter",
+      "variableName":"twitter_url",
+      "inputFieldHeight":22,
+      "exampleText":"your twitter url"
+   },
+   {
+      "title":"github",
+      "variableName":"github_url",
+      "inputFieldHeight":22,
+      "exampleText":"your github url"
+   },
+   
+   {
+      "title":"facebook",
+      "variableName":"facebook_url",
+      "inputFieldHeight":22,
+      "exampleText":"your facebook url"
+   },
+  
+   {
+      "title":"instagram",
+      "variableName":"instagram_url",
+      "inputFieldHeight":22,
+      "exampleText":"your instagram url"
+   },
+   {
+      "title":"youtube",
+      "variableName":"youtube_url",
+      "inputFieldHeight":22,
+      "exampleText":"your youtube url"
+   },
+   {
+      "title":"disqus",
+      "variableName":"disqus_shortname",
+      "inputFieldHeight":22,
+      "exampleText":"disqus shortname"
+   },
+   {
+      "title":"stack overflow",
+      "variableName":"stack_overflow_url",
+      "inputFieldHeight":22,
+      "exampleText":"your stack overflow url"
+   },
+   {
+      "title":"email",
+      "variableName":"email",
+      "inputFieldHeight":22,
+      "exampleText":"your email"
+   },
+   {
+      "title":"Google Analysis ID",
+      "variableName":"ga_id",
+      "inputFieldHeight":22,
+      "exampleText":"谷歌分析跟踪ID"
+   }
+]
