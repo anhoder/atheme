@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded',function(){
 
   var imgs = document.getElementsByClassName('random-img');
   for (var i = 0; i <= imgs.length - 1; i++) {
-    imgs[i].setAttribute("src","https://source.unsplash.com/random/1024x" + (400 + i));
+    // https://picsum.photos/1024/
+    imgs[i].setAttribute("src", imgApi + (400 + i));
   }
 
 });

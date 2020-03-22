@@ -102,5 +102,11 @@
       "variableName":"ga_id",
       "inputFieldHeight":22,
       "exampleText":"谷歌分析跟踪ID"
+   },
+   {
+      "title":"随机图片API",
+      "variableName":"img_api",
+      "inputFieldHeight":22,
+      "exampleText":"https://source.unsplash.com/random/1024x"
    }
 ]
