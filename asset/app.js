@@ -36,10 +36,4 @@ document.addEventListener('DOMContentLoaded',function(){
     }
   }
 
-  var imgs = document.getElementsByClassName('random-img');
-  for (var i = 0; i <= imgs.length - 1; i++) {
-    // https://picsum.photos/1024/
-    imgs[i].setAttribute("src", imgApi + (400 + i));
-  }
-
 });

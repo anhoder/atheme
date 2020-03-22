@@ -10,6 +10,15 @@
 
 <!-- include(section-chart-support.html) -->
 
+<script type="text/javascript">
+  var imgApi = "{% if ext_img_api.length %}{{ ext_img_api }}{% else %}https://source.unsplash.com/random/1024x{% /if %}";
+  var imgs = document.getElementsByClassName('random-img');
+  for (var i = 0; i <= imgs.length - 1; i++) {
+    // https://picsum.photos/1024/
+    imgs[i].setAttribute("src", imgApi + (400 + i));
+  }
+</script>
+
 {% if ext_disqus_shortname.length %}
 <script type="text/javascript">
     var disqus_shortname = '{{ ext_disqus_shortname }}'; 
