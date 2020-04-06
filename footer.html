@@ -1,44 +1,96 @@
   <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-              Copyright &copy; 2019
-              <span id="tran-author" class="tran-author">Author: </span><a target="_blank" href="{% if ext_author_url.length %}{{ ext_author_url }}{% /if %}">{% if ext_author.length %}{{ ext_author }}{% /if %}</a>,&nbsp; 
-              <span class="tran-theme">Theme: </span><a target="_blank" href="https://github.com/AlanAlbert/atheme">Atheme</a> (Based on BulmaCSS).
-          </p>
-        </div>
-      </footer>
+    <div id="plt"></div>
+    <div class="content has-text-centered">
+      <p>
+        Copyright &copy; 2019
+        <span id="tran-author" class="tran-author">Author: </span><a target="_blank" href="{% if ext_author_url.length %}{{ ext_author_url }}{% /if %}">{% if ext_author.length %}{{ ext_author }}{% /if %}</a>,&nbsp; 
+        <span class="tran-theme">Theme: </span><a target="_blank" href="https://github.com/AlanAlbert/atheme">Atheme</a> (Based on BulmaCSS).
+      </p>
+    </div>
+  </footer>
 
 <!-- include(section-chart-support.html) -->
-
 <script type="text/javascript">
   var imgApi = "{% if ext_img_api.length %}{{ ext_img_api }}{% else %}https://source.unsplash.com/random/1024x{% /if %}";
-  var imgs = document.getElementsByClassName('random-img');
-  for (var i = 0; i <= imgs.length - 1; i++) {
+  var imgContainers = document.getElementsByClassName('random-img');
+  for (var i = 0; i <= imgContainers.length - 1; i++) {
     // https://picsum.photos/1024/
-    imgs[i].setAttribute("src", imgApi + (400 + i));
+    var img = document.createElement('img');
+    img.src = imgApi + (400 + i);
+    imgContainers[i].appendChild(img);
   }
 </script>
 
+{% if ext_live2d.length %}
+<script type="text/javascript">
+  {% if ext_live2d equalsString "cat" %}
+    {% if ext_cat_color equalsString "white" %}
+    var modelJson = 'asset/cat/white/tororo.model.json';
+    var pluginRootPath = 'asset/cat/white';
+    var pluginModelPath = 'asset/cat/white';
+    {% else %}
+    var modelJson = 'asset/cat/black/hijiki.model.json';
+    var pluginRootPath = 'asset/cat/black';
+    var pluginModelPath = 'asset/cat/black';
+    {% /if %}
+  {% /if %}
+  {% if ext_live2d equalsString "plt" %}
+    var modelJson = "asset/plt/model.json";
+    var pluginRootPath = 'asset/plt';
+    var pluginModelPath = 'asset/plt';
+  {% /if %}
+
+  var config = {
+    pluginRootPath: pluginRootPath,
+    pluginJsPath: "lib/",
+    pluginModelPath: pluginModelPath,
+    tagMode:false,
+    debug:false,
+    model: {
+      jsonPath: modelJson,  // xxx.model.json 的路径
+    },
+    display: {
+      width: 325,           // canvas的宽度
+      height: 300,          // canvas的高度
+      position: 'right',    // 显示位置：左或右
+      hOffset: -75,         // canvas水平偏移
+      vOffset: 0,           // canvas垂直偏移
+    },
+    dialog:{
+      enable: true
+    },
+    mobile: {
+      show: false,         // 是否在移动设备上显示
+    },
+    react: {
+      opacity: 1,         // 透明度
+    },
+    log: false,
+  };
+  L2Dwidget.init(config);
+</script>
+{% /if %}
+
 {% if ext_disqus_shortname.length %}
 <script type="text/javascript">
-    var disqus_shortname = '{{ ext_disqus_shortname }}'; 
+  var disqus_shortname = '{{ ext_disqus_shortname }}'; 
 
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 </script>
 
 <script type="text/javascript">
-var disqus_shortname = '{{ ext_disqus_shortname }}'; 
+  var disqus_shortname = '{{ ext_disqus_shortname }}'; 
 
-(function () {
-var s = document.createElement('script'); s.async = true;
-s.type = 'text/javascript';
-s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
+  (function () {
+  var s = document.createElement('script'); s.async = true;
+  s.type = 'text/javascript';
+  s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
 </script>
 {% /if %}  
 {% if ext_duoshuo_shortname.length %}

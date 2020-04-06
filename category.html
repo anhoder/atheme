@@ -29,8 +29,7 @@
             <div class="card">
               <a href="{{ p.url }}">                
               <div class="card-image">
-                <figure class="image">
-                  <img class="random-img" src="" />
+                <figure class="random-img">
                 </figure>
               </div>
               </a>
@@ -44,10 +43,10 @@
                   {% /if %}                          
                   <p> 
                     <a href="{{ p.url }}"><span class="tran-readmore">Read more...</span></a>&nbsp;&nbsp; 
-                    <span class="date" style="float: right;">{{ p.date }}
+                    <span class="date" style="float: right;"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;{{ p.date }}
                       {% if p.cats.@count %}<span class="tran-posted-in">posted in</span>&nbsp; {% /if %}
                       {% for cat in p.cats %}
-                          <span class="posted-in"><a href='{{ cat.url }}'>{{ cat.name }}</a></span>
+                        <span class="posted-in"><a href='{{ cat.url }}'><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;{{ cat.name }}</a></span>&nbsp;&nbsp;
                       {% /for %}
                     </span>                          
                   </p>

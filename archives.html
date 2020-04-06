@@ -1,8 +1,8 @@
   <div class="hero-body ct-body">
     <div class="container">
-          <h1 class="title-only">
-                <span class="tran-archives">Archives</span>
-          </h1>
+      <h1 class="title-only">
+        <span class="tran-archives">Archives</span>
+      </h1>
     </div>
   </div>
 </section>
@@ -25,16 +25,16 @@
                       <h2 class="title">{{ p.title }}</h2>
                     </a><br />
                     <p class="des">
-                     <span class="date">{{ p.date }}</span>
+                     <span class="date"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;{{ p.date }}</span>
                       {% if p.cats.@count %}<span class="tran-posted-in">posted in</span>&nbsp; {% /if %}
                       {% for cat in p.cats %}
-                          <span class="posted-in"><a href='{{ cat.url }}'>{{ cat.name }}&nbsp; </a></span>
+                          <span class="posted-in"><a href='{{ cat.url }}'><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;{{ cat.name }}</a>&nbsp; &nbsp; </span>
                       {% /for %}       
                      
                       {% if p.tags.@count %}
                       <span style="display: block;margin-top: 10px;">
                         {% for tag in p.tags %}
-                          <a href='{{ tag.url }}'>#{{ tag.name }}</a>&nbsp; &nbsp; 
+                          <a class="tag is-link is-light" href='{{ tag.url }}'>#{{ tag.name }}</a>&nbsp; &nbsp; 
                         {% /for %}  
                       </span>
                       {% /if %}

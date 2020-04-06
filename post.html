@@ -7,8 +7,7 @@
       <div class="column is-two-thirds">
         <div class="post-body single-content">      
           <div class="card-image">
-            <figure class="image">
-              <img class="random-img" src="">
+            <figure class="random-img">
             </figure>
           </div>
           <h1 class="title">
@@ -31,12 +30,12 @@
                  <a href="{% if ext_author_url.length %}{{ ext_author_url }}{% /if %}">{{ ext_author }}</a>
                  &nbsp;&nbsp;&nbsp;<span style="color: #ccc;">|</span>&nbsp;&nbsp;&nbsp;
                  {% /if %}
-                 <span class="date">{{ post.date }}</span>
+                 <span class="date"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;{{ post.date }}</span>
                   {% if post.cats.@count %}
                   <span class="tran-posted-in">posted in</span>&nbsp; 
                   {% /if %}
                   {% for cat in post.cats %}
-                      <span class="posted-in"><a href='{{ cat.url }}'>{{ cat.name }}</a></span>
+                    <span class="posted-in"><a href='{{ cat.url }}'><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;&nbsp;{{ cat.name }}</a></span>
                   {% /for %}     
                   {% if ext_disqus_shortname.length %}
                     &nbsp;&nbsp;&nbsp;<span style="color: #ccc;">|</span>&nbsp;&nbsp;&nbsp;
@@ -51,7 +50,7 @@
                   {% if post.tags.@count %}
                   &nbsp;&nbsp;&nbsp;<span style="color: #ccc;">|</span>&nbsp;&nbsp;&nbsp;
                   {% for tag in post.tags %}
-                    <a class="tag is-link is-light" href='{{ tag.url }}'>#{{ tag.name }}</a>
+                    <a class="tag" href='{{ tag.url }}'>#{{ tag.name }}</a>
                   {% /for %}
                   {% /if %}
                 </p>
@@ -68,8 +67,9 @@
             <script src="https://utteranc.es/client.js"
                     repo="{{ ext_utteranc_repo }}"
                     issue-term="title"
-                    theme="{% if ext_utteranc_theme.length %}{{ ext_utteranc_theme }}{% else %}github-light{% /if %}"
+                    theme="github-dark"
                     crossorigin="anonymous"
+                    id="github-comment"
                     async>
             </script>
             {% /if %} 

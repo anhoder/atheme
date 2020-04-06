@@ -1,6 +1,7 @@
 <div class="card">
   <header class="card-header">
     <p class="card-header-title">
+      <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp;
       <span class="tran-notice">Notice</span> 
     </p>
   </header>
@@ -13,6 +14,7 @@
 <div class="card">
   <header class="card-header">
     <p class="card-header-title">
+      <i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;
       <span class="tran-site-categories">Categories</span> 
     </p>
   </header>
@@ -23,7 +25,7 @@
         <li><a href="{{ p.url }}">{{ p.name }}</a>
           {% if p.children.@count %} <ul> {% /if %}
           {% for p2 in p.children %}
-                <li><a href="{{ p2.url }}">{{ p2.name }}</a></li>
+            <li><a href="{{ p2.url }}">{{ p2.name }}</a></li>
           {% /for %}
           {% if p.children.@count %} </ul> {% /if %}
         </li> 
@@ -35,6 +37,7 @@
 <div class="card">
   <header class="card-header">
     <p class="card-header-title">
+      <i class="fa fa-tags" aria-hidden="true"></i>&nbsp;&nbsp;
       <span class="tran-site-tags">Tags</span> 
     </p>
   </header>

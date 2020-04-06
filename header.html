@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>
     {% if pageTitle.length %}  
     {{ pageTitle }}
@@ -18,8 +18,9 @@
     <link href="atom.xml" rel="alternate" title="{{ siteName }}" type="application/atom+xml">
     <link rel="stylesheet" href="asset/css/style.min.css">
     <link rel="stylesheet" href="asset/css/doc.css">
-    {% if ext_ga_id.length %}
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    {% if ext_ga_id.length %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ext_ga_id}}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -28,6 +29,21 @@
 
       gtag('config', '{{ext_ga_id}}');
     </script>
+    {% /if %}
+    <!-- 百度分析 -->
+    {% if ext_baidu_id.length %}
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?{{ ext_baidu_id }}";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    {% /if %}
+    {% if ext_live2d.length %}
+      <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js"></script>
     {% /if %}
     <script src="asset/app.js"></script>
 </head>
@@ -102,14 +118,14 @@
                       {% if ext_email.length %}
                       <a href="mailto: {{ ext_email }}" target="_blank" title="email">
                         <span class="icon is-large has-text-grey-darker">
-                          <svg class="svg-inline--fa fa-email fa-w-14 fa-lg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1208" width="200" height="200"><path d="M935.335233 153.62202h-846.666656a84.666666 84.666666 0 0 0-84.666666 84.666666v550.333327a84.666666 84.666666 0 0 0 84.666666 84.666665h846.666656a84.666666 84.666666 0 0 0 84.666666-84.666665v-550.333327a84.666666 84.666666 0 0 0-84.666666-84.666666z m-27.293711 213.952665L557.558216 549.672927a94.993177 94.993177 0 0 1-87.065555 0.197555l-354.612218-182.202664a42.333333 42.333333 0 0 1 38.698311-75.308177l354.606573 182.202664a10.196689 10.196689 0 0 0 9.341556-0.022577l350.477662-182.089776a42.333333 42.333333 0 1 1 39.034155 75.127555z" fill="#2c2c2c" p-id="1209"></path></svg>
+                          <svg class="svg-inline--fa fa-email fa-w-14 fa-lg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1208" width="200" height="200"><path fill="currentColor" d="M935.335233 153.62202h-846.666656a84.666666 84.666666 0 0 0-84.666666 84.666666v550.333327a84.666666 84.666666 0 0 0 84.666666 84.666665h846.666656a84.666666 84.666666 0 0 0 84.666666-84.666665v-550.333327a84.666666 84.666666 0 0 0-84.666666-84.666666z m-27.293711 213.952665L557.558216 549.672927a94.993177 94.993177 0 0 1-87.065555 0.197555l-354.612218-182.202664a42.333333 42.333333 0 0 1 38.698311-75.308177l354.606573 182.202664a10.196689 10.196689 0 0 0 9.341556-0.022577l350.477662-182.089776a42.333333 42.333333 0 1 1 39.034155 75.127555z" fill="#2c2c2c" p-id="1209"></path></svg>
                         </span>
                       </a>
                       {% /if %}
                       {% if ext_stack_overflow_url.length %}
                       <a href="{{ ext_stack_overflow_url }}" target="_blank" title="email">
                         <span class="icon is-large has-text-grey-darker">
-                          <svg class="svg-inline--fa fa-stackoverflow fa-w-14 fa-lg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1787" width="200" height="200"><path d="M809.714286 932.571429H170.857143v-274.285715H79.428571v365.714286h821.714286v-365.714286h-91.428571v274.285715z m-538.285715-299.428572l18.857143-89.714286 447.428572 94.285715-18.857143 89.142857z m58.857143-213.714286l38.285715-83.428571 414.285714 193.714286-38.285714 82.857143z m114.857143-203.428571l58.285714-70.285714 350.857143 293.142857-58.285714 70.285714zM672 0l272.571429 366.285714-73.142858 54.857143-272.571428-366.285714zM261.714286 840.571429v-90.857143h457.142857v90.857143H261.714286z" p-id="1788" fill="#2c2c2c"></path></svg>
+                          <svg class="svg-inline--fa fa-stackoverflow fa-w-14 fa-lg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1787" width="200" height="200"><path fill="currentColor" d="M809.714286 932.571429H170.857143v-274.285715H79.428571v365.714286h821.714286v-365.714286h-91.428571v274.285715z m-538.285715-299.428572l18.857143-89.714286 447.428572 94.285715-18.857143 89.142857z m58.857143-213.714286l38.285715-83.428571 414.285714 193.714286-38.285714 82.857143z m114.857143-203.428571l58.285714-70.285714 350.857143 293.142857-58.285714 70.285714zM672 0l272.571429 366.285714-73.142858 54.857143-272.571428-366.285714zM261.714286 840.571429v-90.857143h457.142857v90.857143H261.714286z" p-id="1788" fill="#2c2c2c"></path></svg>
                         </span>
                       </a>
                       {% /if %}

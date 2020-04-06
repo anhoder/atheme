@@ -1,21 +1,21 @@
 [
    {
-      "title":"author-作者",
+      "title":"作者",
       "variableName":"author",
       "inputFieldHeight":22,
       "exampleText":"艾某某"
    },
    {
-      "title":"author url-作者首页",
+      "title":"作者首页",
       "variableName":"author_url",
       "inputFieldHeight":22,
       "exampleText":"https://xxx.cn"
    },
    {
-      "title":"notice-公告",
+      "title":"公告",
       "variableName":"notice",
       "inputFieldHeight":80,
-      "exampleText":"notice content 公告内容"
+      "exampleText":"公告内容"
    },
    {
       "title":"site icon-站点icon",
@@ -36,22 +36,16 @@
       "exampleText":"存放评论的github库: xx/xxx"
    },
    {
-      "title":"utteranc theme",
-      "variableName":"utteranc_theme",
-      "inputFieldHeight":22,
-      "exampleText":"utteranc官网可查看主题类型"
-   },
-   {
       "title":"weibo-微博",
       "variableName":"weibo_url",
       "inputFieldHeight":22,
-      "exampleText":"your weibo url"
+      "exampleText":"Weibo url"
    },
    {
       "title":"twitter",
       "variableName":"twitter_url",
       "inputFieldHeight":22,
-      "exampleText":"your twitter url"
+      "exampleText":"Twitter url"
    },
    {
       "title":"github",
@@ -64,20 +58,20 @@
       "title":"facebook",
       "variableName":"facebook_url",
       "inputFieldHeight":22,
-      "exampleText":"your facebook url"
+      "exampleText":"Facebook url"
    },
   
    {
       "title":"instagram",
       "variableName":"instagram_url",
       "inputFieldHeight":22,
-      "exampleText":"your instagram url"
+      "exampleText":"Instagram url"
    },
    {
       "title":"youtube",
       "variableName":"youtube_url",
       "inputFieldHeight":22,
-      "exampleText":"your youtube url"
+      "exampleText":"Youtube url"
    },
    {
       "title":"disqus",
@@ -89,13 +83,13 @@
       "title":"stack overflow",
       "variableName":"stack_overflow_url",
       "inputFieldHeight":22,
-      "exampleText":"your stack overflow url"
+      "exampleText":"StackOverflow"
    },
    {
       "title":"email",
       "variableName":"email",
       "inputFieldHeight":22,
-      "exampleText":"your email"
+      "exampleText":"电子邮箱"
    },
    {
       "title":"Google Analysis ID",
@@ -104,9 +98,27 @@
       "exampleText":"谷歌分析跟踪ID"
    },
    {
+      "title":"百度分析ID",
+      "variableName":"baidu_id",
+      "inputFieldHeight":22,
+      "exampleText":"百度分析跟踪ID"
+   },
+   {
       "title":"随机图片API",
       "variableName":"img_api",
       "inputFieldHeight":22,
       "exampleText":"https://source.unsplash.com/random/1024x"
+   },
+   {
+      "title":"看板娘",
+      "variableName":"live2d",
+      "inputFieldHeight":22,
+      "exampleText":"可输入 cat 或 plt"
+   },
+   {
+      "title":"cat的颜色",
+      "variableName":"cat_color",
+      "inputFieldHeight":22,
+      "exampleText":"仅为cat时可用，可选white或black"
    }
 ]
