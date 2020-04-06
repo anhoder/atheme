@@ -18,13 +18,13 @@
       "exampleText":"公告内容"
    },
    {
-      "title":"site icon-站点icon",
+      "title":"站点icon",
       "variableName":"site_icon",
       "inputFieldHeight":22,
       "exampleText":"64x64 png file"
    },
    {
-      "title":"logo path-logo路径",
+      "title":"logo路径",
       "variableName":"logo_path",
       "inputFieldHeight":22,
       "exampleText":"240x240"
@@ -36,7 +36,7 @@
       "exampleText":"存放评论的github库: xx/xxx"
    },
    {
-      "title":"weibo-微博",
+      "title":"微博",
       "variableName":"weibo_url",
       "inputFieldHeight":22,
       "exampleText":"Weibo url"

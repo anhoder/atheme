@@ -4,7 +4,7 @@
 [演示网站1](https://danlanhai.gitee.io/)
 [演示网站1](https://alanalbert.github.io/)
 
-> 给个star吧(*╹▽╹*)
+> 右上角给个star吧(*╹▽╹*)
 
 ## 简介
 
