@@ -12141,9 +12141,13 @@ label.panel-block:hover {
   font-size: 1.2rem;
 }
 
-.markdown-body p, .markdown-body blockquote, .markdown-body pre, .markdown-body figure, .markdown-body table {
+.markdown-body blockquote, .markdown-body pre, .markdown-body figure, .markdown-body table {
   margin-top: 1rem;
   line-height: 1.6rem;
+}
+
+.markdown-body p {
+  margin: 0.5rem 0;
 }
 
 .markdown-body figure {
@@ -12181,7 +12185,7 @@ label.panel-block:hover {
   -webkit-box-shadow: inset 3px 0 0 0 rgba(0, 0, 0, 0.84);
           box-shadow: inset 3px 0 0 0 rgba(0, 0, 0, 0.84);
   padding-left: 23px;
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-style: italic;
 }
 
