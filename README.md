@@ -1,10 +1,19 @@
 # atheme
 
+![GitHub repo size](https://img.shields.io/github/repo-size/AlanAlbert/atheme)
+![Last Tag](https://badgen.net/github/tag/AlanAlbert/atheme)
+![GitHub last commit](https://badgen.net/github/last-commit/AlanAlbert/atheme)
+![GitHub](https://img.shields.io/github/license/AlanAlbert/atheme)
+
+
+![GitHub stars](https://img.shields.io/github/stars/AlanAlbert/atheme?style=social)
+![GitHub forks](https://img.shields.io/github/forks/AlanAlbert/atheme?style=social)
+
 基于MWeb编辑器的一款静态网站主题 atheme
 [演示网站1](https://danlanhai.gitee.io/)
 [演示网站1](https://alanalbert.github.io/)
 
-> 右上角给个star吧(*╹▽╹*)
+> 右上角给个✨star✨吧(*╹▽╹*)
 
 ## 简介
 
