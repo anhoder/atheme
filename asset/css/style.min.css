@@ -6493,6 +6493,7 @@ a.list-item {
   display: flex;
   text-align: left;
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .media .content:not(:last-child) {
