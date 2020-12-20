@@ -1,17 +1,17 @@
 # atheme
 
-![GitHub repo size](https://img.shields.io/github/repo-size/AlanAlbert/atheme)
-![Last Tag](https://badgen.net/github/tag/AlanAlbert/atheme)
-![GitHub last commit](https://badgen.net/github/last-commit/AlanAlbert/atheme)
-![GitHub](https://img.shields.io/github/license/AlanAlbert/atheme)
+![GitHub repo size](https://img.shields.io/github/repo-size/anhoder/atheme)
+![Last Tag](https://badgen.net/github/tag/anhoder/atheme)
+![GitHub last commit](https://badgen.net/github/last-commit/anhoder/atheme)
+![GitHub](https://img.shields.io/github/license/anhoder/atheme)
 
 
-![GitHub stars](https://img.shields.io/github/stars/AlanAlbert/atheme?style=social)
-![GitHub forks](https://img.shields.io/github/forks/AlanAlbert/atheme?style=social)
+![GitHub stars](https://img.shields.io/github/stars/anhoder/atheme?style=social)
+![GitHub forks](https://img.shields.io/github/forks/anhoder/atheme?style=social)
 
 基于MWeb编辑器的一款静态网站主题 atheme
 [演示网站1](https://danlanhai.gitee.io/)
-[演示网站1](https://alanalbert.github.io/)
+[演示网站1](https://anhoder.github.io/)
 
 > 右上角给个✨star✨吧(*╹▽╹*)
 
